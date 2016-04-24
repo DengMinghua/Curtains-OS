@@ -1,0 +1,21 @@
+PUBLIC void out_byte(u16 port, u8 value);
+PUBLIC u8   in_byte(u16 port);
+PUBLIC void init_prot();
+PUBLIC void init_8259A();
+PUBLIC void init_prot();
+PUBLIC void init_8259A();
+PUBLIC void enable_int();
+PUBLIC void disable_int();
+PUBLIC void*  memcpy(void* pDst, void* pSrc, int iSize);
+PUBLIC void   memset(void* p_dst, char ch, int size);
+PUBLIC void  disable_irq();
+PUBLIC void enable_irq();
+PUBLIC void set_irq_handler(int irq, irq_handler handler);
+PUBLIC int sys_get_time();
+PUBLIC void sys_call();
+PUBLIC int get_time();
+PUBLIC void init_keyboard();
+PUBLIC void init_clock();
+PUBLIC void tty();
+PUBLIC u8 keyboard_read();
+
